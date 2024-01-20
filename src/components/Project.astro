@@ -1,0 +1,45 @@
+---
+import Tailwind from "../components/TecnologyBadges/Tailwind.astro";
+import Reactjs from "./TecnologyBadges/Reactjs.astro";
+import Astroo from "./TecnologyBadges/Astro.astro";
+import GithubBtn from "../components/GithubBtn.astro";
+import DemoProjectBtn from "../components/DemoProjectBtn.astro";
+
+interface Props {
+  projectTitle: string;
+  projectDescription: string;
+  projectImageUrl: string;
+}
+
+const { projectTitle, projectDescription, projectImageUrl } = Astro.props;
+---
+
+<article class="mb-14 rounded-2xl bg-transparent">
+  <h4 class="text-2xl text-yellow-300/90 font-semibold">{projectTitle}</h4>
+  <p class="text-zinc-400 mb-4 text-xl">{projectDescription}</p>
+
+  <ul class="flex flex-row gap-x-2 mb-2">
+    <li>
+      <Tailwind />
+    </li>
+    <li>
+      <Reactjs />
+    </li>
+    <li>
+      <Astroo />
+    </li>
+  </ul>
+
+  <img
+    src={projectImageUrl}
+    alt="Todo app project image"
+    class="w-full rounded-2xl h-[380px] object-cover shadow-2xl shadow-gray-300/20"
+    loading="lazy"
+    decoding="async"
+  />
+
+  <div class="flex gap-2 mt-2">
+    <GithubBtn />
+    <DemoProjectBtn />
+  </div>
+</article>

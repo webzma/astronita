@@ -1,0 +1,16 @@
+---
+interface Props {
+  contentBadge: string;
+}
+
+const { contentBadge } = Astro.props;
+---
+
+<a
+  target="_blank"
+  rel="noopener"
+  href="#"
+  class="py-1 mb-4 block max-w-40 text-center bg-green-500/30 text-green-400 text-xs font-medium rounded-2xl"
+>
+  {contentBadge}
+</a>
