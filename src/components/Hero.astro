@@ -2,8 +2,19 @@
 import Badge from "./Badge.astro";
 ---
 
-<div class="relative flex items-start justify-between mb-36">
-  <div class="w-4/5">
+<div class="relative flex items-start mb-36">
+  <div class="sm:w-4/5">
+    <div class="sm:hidden flex gap-4 items-center mb-4">
+      <figure class="left-0">
+        <img
+          src="/profile.jpeg"
+          class="rounded-full size-16 object-cover"
+          alt="Wilberk Alejandro Ledezma @webzma"
+          decoding="async"
+          loading="lazy"
+        />
+      </figure>
+    </div>
     <Badge contentBadge="Disponible para trabajar" />
     <h1 class="md:text-6xl sm:text-4xl text-3xl font-bold text-white mb-4">
       Wilberk Alejandro Ledezma <span
@@ -14,6 +25,7 @@ import Badge from "./Badge.astro";
       Desarrollador Frontend Junior con experiencia en el desarrollo de
       aplicaciones web utilizando HTML, CSS, JavaScript y React..
     </p>
+
     <div class="flex space-x-5 pt-8 m-auto items-center">
       <a
         title="Descarga mi CV"
@@ -107,7 +119,7 @@ import Badge from "./Badge.astro";
       </a>
     </div>
   </div>
-  <div class="rounded-lg">
+  <div class="rounded-lg hidden sm:flex">
     <figure class="right-0">
       <img
         src="/profile.jpeg"
