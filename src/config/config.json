@@ -1,0 +1,19 @@
+{
+  "site": {
+    "title": "Wilberk Ledezma | Portfolio",
+    "base_path": "/",
+    "favicon": "/favicon.png",
+    "lang": "en",
+    "description": "Desarrollador Frontend Junior con experiencia en el desarrollo de aplicaciones web utilizando ReatJS, Next.js y Astro."
+  },
+  "metadata": {
+    "meta_author": "Wilberk Ledezma @webzma",
+    "meta_description": "Desarrollador Frontend Junior con experiencia en el desarrollo de aplicaciones web utilizando ReatJS, Next.js y Astro."
+  },
+  "author": {
+    "username": "webzma",
+    "name": "Wilberk Alejandro Ledezma",
+    "avatar": "/profile.jpeg",
+    "bio": "Desarrollador Frontend Junior con experiencia en el desarrollo de aplicaciones web utilizando ReatJS, Next.js y Astro."
+  }
+}
