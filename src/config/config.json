@@ -2,7 +2,7 @@
   "site": {
     "title": "Wilberk Ledezma | Portfolio",
     "base_path": "/",
-    "favicon": "/favicon.png",
+    "favicon": "/favicon.svg",
     "lang": "en",
     "description": "Desarrollador Frontend Junior con experiencia en el desarrollo de aplicaciones web utilizando ReatJS, Next.js y Astro."
   },
