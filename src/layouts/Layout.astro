@@ -1,6 +1,8 @@
 ---
 import "@fontsource-variable/onest";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
 import { ViewTransitions } from "astro:transitions";
 import config from "../config/config.json";
 
@@ -34,7 +36,9 @@ const { title } = Astro.props;
 		</div>
 		<main class="max-w-[778px] m-auto px-4">
 			<Header />
+			<Hero />
 			<slot />
+			<Footer />
 		</main>
 		<style is:global>
 			:root {
