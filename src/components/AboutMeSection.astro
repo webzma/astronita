@@ -1,6 +1,8 @@
 ---
 import Subtitle from "./Subtitle.astro";
 import AboutMeIcon from "../components/Icons/AboutMeIcon.astro";
+import { Image } from "astro:assets";
+import avatar from "/public/profile.jpeg";
 ---
 
 <section
@@ -36,8 +38,8 @@ import AboutMeIcon from "../components/Icons/AboutMeIcon.astro";
         >.
       </p>
     </div>
-    <img
-      src="/profile.jpeg"
+    <Image
+      src={avatar}
       class="rounded-full size-64 md:w-full md:h-64 order-1 md:order-2 object-cover"
       alt="Wilberk Ledezma picture"
     />
