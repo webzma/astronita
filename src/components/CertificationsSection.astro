@@ -1,6 +1,7 @@
 ---
 import Subtitle from "./Subtitle.astro";
 import CerttificationsIcon from "./Icons/CertificationsIcon.astro";
+import { certificates } from "../config/data.json";
 ---
 
 <section class="flex flex-col" id="certifications">
@@ -8,194 +9,48 @@ import CerttificationsIcon from "./Icons/CertificationsIcon.astro";
     <CerttificationsIcon />
   </Subtitle>
 
-  <a
-    class="mb-4 group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:border-neutral-400 md:flex-row md:items-center"
-    href="https://platzi.com/p/webzma/curso/7396-react-vite-tailwindcss/diploma/detalle/"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <div class="flex flex-col gap-4 md:flex-row md:items-center">
-      <img
-        class="size-14"
-        src="/tailwind-react-course.webp"
-        alt="asa"
-        width="80"
-        height="80"
-      />
-      <div>
-        <p class="text-zinc-300 font-medium text-lg">
-          Curso de React.js con Vite.js y TailwindCSS
-        </p>
-        <p class="text-xs text-yellow-400/90">18/10/2023</p>
-      </div>
-    </div><svg
-      width="18"
-      height="18"
-      viewBox="0 0 18 18"
-      fill="none"
-      class="transition-all duration-300 group-hover:translate-x-1"
-      ><path
-        d="M5.25 12.75L12.75 5.25"
-        stroke="#999999"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path><path
-        d="M5.25 5.25H12.75V12.75"
-        stroke="#999999"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path></svg
-    ></a
-  >
-
-  <a
-    class="mb-4 group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:border-neutral-400 md:flex-row md:items-center"
-    href="https://platzi.com/p/webzma/curso/2477-frontend-developer-practico/diploma/detalle/"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <div class="flex flex-col gap-4 md:flex-row md:items-center">
-      <img
-        class="size-14"
-        src="/frontend-practico-course.webp"
-        alt="asa"
-        width="80"
-        height="80"
-      />
-      <div>
-        <p class="text-zinc-300 font-medium text-lg">
-          Curso Práctico de Frontend Developer
-        </p>
-        <p class="text-xs text-yellow-400/90">26/02/2022</p>
-      </div>
-    </div><svg
-      width="18"
-      height="18"
-      viewBox="0 0 18 18"
-      fill="none"
-      class="transition-all duration-300 group-hover:translate-x-1"
-      ><path
-        d="M5.25 12.75L12.75 5.25"
-        stroke="#999999"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path><path
-        d="M5.25 5.25H12.75V12.75"
-        stroke="#999999"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path></svg
-    ></a
-  >
-
-  <a
-    class="mb-4 group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:border-neutral-400 md:flex-row md:items-center"
-    href="https://platzi.com/p/webzma/curso/1098-ingenieria/diploma/detalle/"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <div class="flex flex-col gap-4 md:flex-row md:items-center">
-      <img
-        class="size-14"
-        src="/fundamentals-course.webp"
-        alt="asa"
-        width="80"
-        height="80"
-      />
-      <div>
-        <p class="text-zinc-300 font-medium text-lg">
-          Fundamentos de Ingeniería de Software
-        </p>
-        <p class="text-xs text-yellow-400/90">30/09/2021</p>
-      </div>
-    </div><svg
-      width="18"
-      height="18"
-      viewBox="0 0 18 18"
-      fill="none"
-      class="transition-all duration-300 group-hover:translate-x-1"
-      ><path
-        d="M5.25 12.75L12.75 5.25"
-        stroke="#999999"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path><path
-        d="M5.25 5.25H12.75V12.75"
-        stroke="#999999"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path></svg
-    ></a
-  >
-
-  <a
-    class="mb-4 group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:border-neutral-400 md:flex-row md:items-center"
-    href="https://platzi.com/p/webzma/curso/2419-javascript-poo-intermedio/diploma/detalle/"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <div class="flex flex-col gap-4 md:flex-row md:items-center">
-      <img
-        class="size-14"
-        src="/intermediate-poo-course.webp"
-        alt="asa"
-        width="80"
-        height="80"
-      />
-      <div>
-        <p class="text-zinc-300 font-medium text-lg">
-          Curso Intermedio de Programación Orientada a Objetos en JavaScript
-        </p>
-        <p class="text-xs text-yellow-400/90">02/05/2023</p>
-      </div>
-    </div>
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 18 18"
-      fill="none"
-      class="transition-all duration-300 group-hover:translate-x-1"
-      ><path
-        d="M5.25 12.75L12.75 5.25"
-        stroke="#999999"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path><path
-        d="M5.25 5.25H12.75V12.75"
-        stroke="#999999"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path></svg
-    >
-  </a>
-
-  <a
-    class="mb-4 group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:border-neutral-400 md:flex-row md:items-center"
-    href="https://platzi.com/p/webzma/curso/7397-laboratorio-react/diploma/detalle/"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <div class="flex flex-col gap-4 md:flex-row md:items-center">
-      <img
-        class="size-14"
-        src="/ecommerce-react-course.webp"
-        alt="asa"
-        width="80"
-        height="80"
-      />
-      <div>
-        <p class="text-zinc-300 font-medium text-lg">
-          Prueba Técnica: E-commerce Profesional con React.js
-        </p>
-        <p class="text-xs text-yellow-400/90">22/10/2023</p>
-      </div>
-    </div><svg
-      width="18"
-      height="18"
-      viewBox="0 0 18 18"
-      fill="none"
-      class="transition-all duration-300 group-hover:translate-x-1"
-      ><path
-        d="M5.25 12.75L12.75 5.25"
-        stroke="#999999"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path><path
-        d="M5.25 5.25H12.75V12.75"
-        stroke="#999999"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path></svg
-    ></a
-  >
+  {
+    certificates.map(({ name, date, url, icon }) => (
+      <a
+        class="mb-4 group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:border-neutral-400 md:flex-row md:items-center"
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <>
+          <div class="flex flex-col gap-4 md:flex-row md:items-center">
+            <img class="size-14" src={icon} alt="asa" width="80" height="80" />
+            <div>
+              <p class="text-zinc-300 font-medium text-lg">{name}</p>
+              <p class="text-xs text-yellow-400/90">
+                {date.replaceAll("-", "/")}
+              </p>
+            </div>
+          </div>
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            class="transition-all duration-300 group-hover:translate-x-1"
+          >
+            <>
+              <path
+                d="M5.25 12.75L12.75 5.25"
+                stroke="#999999"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5.25 5.25H12.75V12.75"
+                stroke="#999999"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </>
+          </svg>
+        </>
+      </a>
+    ))
+  }
 </section>

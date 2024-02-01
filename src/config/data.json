@@ -95,10 +95,34 @@
   ],
   "certificates": [
     {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
+      "name": "Curso de React.js con Vite.js y TailwindCSS",
+      "date": "18-10-2023",
+      "url": "https://platzi.com/p/webzma/curso/7396-react-vite-tailwindcss/diploma/detalle/",
+      "icon": "/tailwind-react-course.webp"
+    },
+    {
+      "name": "Curso Práctico de Frontend Developer",
+      "date": "26-02-2022",
+      "url": "https://platzi.com/p/webzma/curso/2477-frontend-developer-practico/diploma/detalle/",
+      "icon": "/frontend-practico-course.webp"
+    },
+    {
+      "name": "Fundamentos de Ingeniería de Software",
+      "date": "30-09-2021",
+      "url": "https://platzi.com/p/webzma/curso/1098-ingenieria/diploma/detalle/",
+      "icon": "/fundamentals-course.webp"
+    },
+    {
+      "name": "Curso Intermedio de Programación Orientada a Objetos en JavaScript",
+      "date": "02-05-2023",
+      "url": "https://platzi.com/p/webzma/curso/2419-javascript-poo-intermedio/diploma/detalle/",
+      "icon": "/intermediate-poo-course.webp"
+    },
+    {
+      "name": "Prueba Técnica: E-commerce Profesional con React.js",
+      "date": "22-10-2023",
+      "url": "https://platzi.com/p/webzma/curso/7397-laboratorio-react/diploma/detalle/",
+      "icon": "/ecommerce-react-course.webp"
     }
   ],
   "publications": [
