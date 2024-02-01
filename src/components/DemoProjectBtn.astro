@@ -1,25 +1,12 @@
 ---
 const { demo } = Astro.props;
+import DeployIcon from "./Icons/DeployIcon.astro";
 ---
 
 <a
   href={demo}
-  class="text-zinc-400 py-2 flex gap-1 items-center px-4 text-[14px] transition-all duration-[0.5s] ease-[ease] border-2 hover:bg-[rgba(60,66,213,80%)] border-zinc-400 hover:text-white hover:shadow-[rgba(60,66,213,80%)_0px_7px_29px_0px] active:bg-[hsl(261deg_80%_48%)] active:text-white active:shadow-[rgb(93_24_220)_0px_0px_0px_0px] active:translate-y-1.5 active:transition-[100ms] cursor-pointer shadow-[rgb(0,0,0/5%)-0-0-8px] text-sm bg-[rgba(119,119,119,0.12)] rounded-2xl"
+  class="text-zinc-300 py-2 flex gap-1 items-center px-4 text-[14px] border-neutral-700 border p-4 transition-all duration-300 hover:border-neutral-400 cursor-pointer text-sm rounded-xl"
 >
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class="lucide lucide-globe"
-    ><circle cx="12" cy="12" r="10"></circle><path
-      d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path
-      d="M2 12h20"></path></svg
-  >
+  <DeployIcon />
   Ir al sitio web</a
 >
