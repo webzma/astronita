@@ -6,10 +6,9 @@ import Linkedin from "./Icons/social-icons/Linkedin.astro";
 import Instagram from "./Icons/social-icons/Instagram.astro";
 import X from "./Icons/social-icons/X.astro";
 
-import Badge from "./Badge.astro";
+import WorkBadge from "./WorkBadge.astro";
 import config from "../config/config.json";
 import { Image } from "astro:assets";
-import avatar from "/public/profile.jpeg";
 ---
 
 <div class="relative flex items-start pt-36">
@@ -27,7 +26,7 @@ import avatar from "/public/profile.jpeg";
         />
       </figure>
     </div>
-    <Badge contentBadge="Disponible para trabajar" />
+    <WorkBadge />
     <h1 class="md:text-6xl sm:text-4xl text-3xl font-bold text-white mb-4">
       {config.author.name}
       <span class="text-yellow-400/90 md:text-3xl text-xl"
@@ -98,7 +97,9 @@ import avatar from "/public/profile.jpeg";
   <div class="rounded-lg hidden sm:flex">
     <figure class="right-0">
       <Image
-        src={avatar}
+        height={400}
+        width={400}
+        src={config.author.avatar}
         class="rounded-full size-24 md:size-36 object-cover"
         alt="Wilberk Alejandro Ledezma @webzma"
       />

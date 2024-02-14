@@ -2,6 +2,8 @@
 import Subtitle from "./Subtitle.astro";
 import ProjectsIcon from "./Icons/ProjectsIcon.astro";
 import Project from "./Project.astro";
+
+import { projects } from "../config/data.json";
 ---
 
 <section id="proyectos" class="mt-36">
@@ -10,36 +12,16 @@ import Project from "./Project.astro";
   </Subtitle>
 
   <div>
-    <Project
-      projectTitle="Todo App"
-      projectDescription="Una hermosa app para registrar las tareas cotidianas."
-      projectImageUrl="/todo-app-project.jpg"
-      projectGithubUrl="https://github.com/webzma/countries-app"
-      projectWebUrl="https://webzma.github.io/todo-app/"
-    />
-
-    <Project
-      projectTitle="Tesla Landing Page"
-      projectDescription="Landing page de la página oficial de Tesla Motors."
-      projectImageUrl="/tesla-project.jpg"
-      projectGithubUrl="https://github.com/webzma/tesla-landing"
-      projectWebUrl="https://tesla-landing-phi.vercel.app/"
-    />
-
-    <Project
-      projectTitle="Tic Tac Toe"
-      projectDescription="Un juego muy divertido para que te diviertas con tus amigos en tus tiempos libres."
-      projectImageUrl="/tic-tac-toe-project.jpg"
-      projectGithubUrl="https://github.com/webzma/tic-tac-toe"
-      projectWebUrl="https://webzma.github.io/tic-tac-toe/"
-    />
-
-    <Project
-      projectTitle="Countries App"
-      projectDescription="App que te muestra información relevante de todos los países del mundo."
-      projectImageUrl="/countries-app-project.jpg"
-      projectGithubUrl="https://github.com/webzma/countries-app"
-      projectWebUrl="https://webzma.github.io/countries-app"
-    />
+    {
+      projects.map((project) => (
+        <Project
+          projectTitle={project.title}
+          projectDescription={project.description}
+          projectImageUrl={project.imgUrl}
+          projectGithubUrl={project.githubUrl}
+          projectWebUrl={project.webUrl}
+        />
+      ))
+    }
   </div>
 </section>
