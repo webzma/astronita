@@ -1,7 +1,10 @@
 ---
 import Subtitle from "./Subtitle.astro";
 import CerttificationsIcon from "./Icons/CertificationsIcon.astro";
-import { certificates } from "../config/data.json";
+import data from "../config/data";
+import sortDate from "../utils/sortDate";
+
+const certificates = sortDate(data.certificates);
 ---
 
 <section class="mt-24" id="certifications">

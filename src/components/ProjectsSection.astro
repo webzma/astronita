@@ -3,7 +3,9 @@ import Subtitle from "./Subtitle.astro";
 import ProjectsIcon from "./Icons/ProjectsIcon.astro";
 import Project from "./Project.astro";
 
-import { projects } from "../config/data.json";
+import data from "../config/data";
+
+const projects = data.projects;
 ---
 
 <section id="proyectos" class="mt-36">
@@ -20,6 +22,7 @@ import { projects } from "../config/data.json";
           projectImageUrl={project.imgUrl}
           projectGithubUrl={project.githubUrl}
           projectWebUrl={project.webUrl}
+          projectTecnologies={project.tecnologies}
         />
       ))
     }

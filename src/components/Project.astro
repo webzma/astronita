@@ -1,7 +1,4 @@
 ---
-import Tailwind from "../components/TecnologyBadges/Tailwind.astro";
-import Reactjs from "./TecnologyBadges/Reactjs.astro";
-import Astroo from "./TecnologyBadges/Astro.astro";
 import GithubBtn from "../components/GithubBtn.astro";
 import DemoProjectBtn from "../components/DemoProjectBtn.astro";
 
@@ -11,6 +8,7 @@ interface Props {
   projectImageUrl: string;
   projectGithubUrl: string;
   projectWebUrl: string;
+  projectTecnologies: any;
 }
 
 const {
@@ -19,6 +17,7 @@ const {
   projectImageUrl,
   projectGithubUrl,
   projectWebUrl,
+  projectTecnologies,
 } = Astro.props;
 ---
 
@@ -26,16 +25,14 @@ const {
   <h3 class="text-2xl text-yellow-400/90 font-semibold">{projectTitle}</h3>
   <p class="text-zinc-300 mb-4 text-lg">{projectDescription}</p>
 
-  <ul class="flex flex-row gap-x-2 mb-4">
-    <li>
-      <Tailwind />
-    </li>
-    <li>
-      <Reactjs />
-    </li>
-    <li>
-      <Astroo />
-    </li>
+  <ul class="flex flex-row gap-2 mb-4 flex-wrap">
+    {
+      projectTecnologies.map((badge: { svg: any }) => (
+        <li>
+          <Fragment set:html={badge.svg} />
+        </li>
+      ))
+    }
   </ul>
 
   <img
