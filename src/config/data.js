@@ -277,7 +277,7 @@ export default {
     {
       "title": "Countries App",
       "isActive": true,
-      "description": "App que te muestra información relevante de todos los países del mundo",
+      "description": "App que te muestra información relevante de todos los países del mundo.",
       "githubUrl": "https://github.com/webzma/countries-app",
       "webUrl": "https://webzma.github.io/countries-app",
       "imgUrl": "/countries-app-project.jpg",
@@ -307,7 +307,7 @@ export default {
     {
       "title": "Todo App",
       "isActive": true,
-      "description": "Una hermosa app para registrar las tareas cotidianas",
+      "description": "Una hermosa app para registrar las tareas cotidianas.",
       "githubUrl": "https://github.com/webzma/countries-app",
       "webUrl": "https://webzma.github.io/todo-app/",
       "imgUrl": "/todo-app-project.jpg",
@@ -333,7 +333,7 @@ export default {
     {
       "title": "Tesla Landing Page",
       "isActive": true,
-      "description": "Landing page de la página oficial de Tesla Motors",
+      "description": "Landing page de la página oficial de Tesla Motors.",
       "githubUrl": "https://github.com/webzma/tesla-landing",
       "webUrl": "https://tesla-landing-phi.vercel.app/",
       "imgUrl": "/tesla-project.jpg",
@@ -364,7 +364,7 @@ export default {
     {
       "title": "Tic Tac Toe",
       "isActive": true,
-      "description": "Un juego muy divertido para que te diviertas con tus amigos en tus tiempos libres",
+      "description": "Un juego muy divertido para que te diviertas con tus amigos en tus tiempos libres.",
       "highlights": [
         "+1 millón de visitas",
         "Multidioma",
