@@ -8,17 +8,77 @@
    		bg-gray-600/45
        shadow-2xl text-xs sm:text-sm border border-zinc-200 sh-zinc-400"
 	>
-		<a class="hover:bg-white/30 rounded-full px-3 transition" href="/">Inicio</a
+		<a class="hover:bg-white/30 rounded-full px-3 transition text-yellow-500 font-bold" href="/" aria-label="inicio">Inicio</a
 		>
 		<a class="hover:bg-white/30 rounded-full px-3 transition" href="/#proyectos"
-			>Proyectos</a
+			aria-label="proyectos">Proyectos</a
 		>
 		<a
 			class="hover:bg-white/30 rounded-full px-3 transition"
-			href="#certifications">Certificados</a
+			href="#certifications" aria-label="certifications">Certificados</a
 		>
 		<a class="hover:bg-white/30 rounded-full px-3 transition" href="/#sobre-mi"
-			>Sobre mí</a
+		aria-label="sobre-mi">Sobre mí</a
 		>
 	</nav>
 </header>
+
+<script>
+	document.addEventListener('astro:page-load', () => {
+	const sections = document.querySelectorAll('section')
+	const navItems = document.querySelectorAll('header nav a')
+	// Creamos la función callback
+	const callback = ((entries: any[]) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				
+				navItems.forEach(item => {
+					if (item.getAttribute('aria-label') === entry.target.id) {
+						item.classList.add('text-yellow-500')
+						item.classList.add('font-bold')
+					} else {
+						item.classList.remove('text-yellow-500')
+						item.classList.remove('font-bold')
+					}
+				});
+			}
+		})
+	})
+
+	// Crear el intersection observer 
+	const observer = new IntersectionObserver(callback, {
+		rootMargin: "0px",
+		root: null,
+		threshold: 0.1
+	})
+
+	sections.forEach(sections => {
+		observer.observe(sections)
+	})
+
+	document.onvisibilitychange = () => {
+      if (document.visibilityState === "hidden") {
+        observer.disconnect()
+      } else {
+        sections.forEach((section) => {
+          observer.observe(section)
+        })
+      }
+    }
+	})
+
+</script>
+
+<style>
+  nav {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+
+  @keyframes nav-shadown {
+    to {
+      @apply shadow-lg ring-1 backdrop-blur dark:bg-gray-800/20 bg-white/10 ring-white/10;
+    }
+  }
+</style>
