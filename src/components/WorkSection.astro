@@ -13,7 +13,7 @@ import Subtitle from "./Subtitle.astro";
       <div
         class="relative mx-12 pb-6 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-4 md:gap-4 md:space-x-4]"
       >
-        <div class="relative pb-6 md:col-span-3">
+        <div class="relative md:col-span-3">
           <div class="sticky top-0">
             <span
               class="text-yellow-400/90 -left-[42px] absolute rounded-full text-5xl"
@@ -30,10 +30,15 @@ import Subtitle from "./Subtitle.astro";
             >
           </div>
         </div>
-        <div
-          class="relative flex text-lg flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3"
-        >
-        En mi rol como Desarrollador Frontend Web, me responsabilicé de la creación y el mantenimiento de la interfaz de usuario de Series.ly. Entre mis principales responsabilidades se encontraban:
+        <div class="relative flex  flex-col gap-4 pb-4 pt-8 md:pt-0 md:col-span-4">
+         <p class="text-zinc-300 text-md md:text-lg">En mi rol como Frontend Developer, me responsabilicé de la creación y el mantenimiento de la interfaz de usuario de Series.ly. Entre mis principales responsabilidades se encontraban:</p>
+
+          <ul class="text-sm flex flex-col gap-4 text-zinc-300 [&>li>strong]:text-yellow-400/90 [&>li>strong]:font-semibold">
+            <li class="before:content-[''] before:inline-block before:absolute before:mt-[7px] before:-translate-x-4 before:w-[7px] before:h-[7px] before:rounded-[50%] before:bg-yellow-400/90"><strong>Maquetación</strong>: Implementación de la estructura y diseño visual del sitio web utilizando HTML y CSS (TailwindCSS).</li>
+            <li class="before:content-[''] before:inline-block before:absolute before:mt-[7px] before:-translate-x-4 before:w-[7px] before:h-[7px] before:rounded-[50%] before:bg-yellow-400/90"><strong>Desarrollo frontend</strong>: Implementación de la estructura y diseño visual del sitio web utilizando HTML y CSS (TailwindCSS).</li>
+            <li class="before:content-[''] before:inline-block before:absolute before:mt-[7px] before:-translate-x-4 before:w-[7px] before:h-[7px] before:rounded-[50%] before:bg-yellow-400/90"><strong>Optimización</strong>: Asegurar un rendimiento óptimo del sitio web en diferentes navegadores y dispositivos.</li>
+            <li class="before:content-[''] before:inline-block before:absolute before:mt-[7px] before:-translate-x-4 before:w-[7px] before:h-[7px] before:rounded-[50%] before:bg-yellow-400/90"><strong>Mantenimiento</strong>: Corrección de errores y actualización del código para garantizar el buen funcionamiento del sitio web.</li>
+          </ul>
         </div>
       </div>
     </li>
