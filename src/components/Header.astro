@@ -10,6 +10,9 @@
 	>
 		<a class="hover:bg-white/30 rounded-full px-3 transition text-yellow-500 font-bold" href="/" aria-label="inicio">Inicio</a
 		>
+		<a class="hover:bg-white/30 rounded-full px-3 transition" href="/#work"
+			aria-label="work">Experiencia</a
+		>
 		<a class="hover:bg-white/30 rounded-full px-3 transition" href="/#proyectos"
 			aria-label="proyectos">Proyectos</a
 		>
@@ -52,8 +55,8 @@
 		threshold: 0.2
 	})
 
-	sections.forEach(sections => {
-		observer.observe(sections)
+	sections.forEach(section => {
+		observer.observe(section)
 	})
 
 	document.onvisibilitychange = () => {
