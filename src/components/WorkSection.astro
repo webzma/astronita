@@ -1,6 +1,8 @@
 ---
 import WorkIcon from "./Icons/WorkIcon.astro";
 import Subtitle from "./Subtitle.astro";
+import data from "../config/data";
+const workData = data.work;
 ---
 
 <section id="work" class="mt-80">
@@ -8,8 +10,8 @@ import Subtitle from "./Subtitle.astro";
     <WorkIcon />
   </Subtitle>
 
-  <ol class="relative mt-2">
-    <li class="">
+  <ol class="relative mt-2">  
+    <li>
       <div
         class="relative mx-12 pb-6 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2  before:border-white/15 before:content-[''] md:grid-cols-4 md:gap-4 md:space-x-4]"
       >
@@ -20,24 +22,30 @@ import Subtitle from "./Subtitle.astro";
               >•</span
             >
             <h3 class="text-2xl font-semibold text-yellow-400/90">
-              Frontend Web Developer
+              { workData[0].position }
             </h3>
-            <h4 class="font-semibold text-xl  text-white">
-              Series.ly
+            <h4 class="font-semibold text-xl text-white flex items-center gap-x-2">
+              { workData[0].name } 
             </h4>
-            <time class="p-0 m-0 text-sm  text-white/80"
-              >Actualmente...</time
-            >
+
+            <div class="flex items-center">
+              <div class="h-1 w-1 rounded-full bg-red-300 mr-2">
+              </div>
+              <span class="italic text-red-300 text-sm">Finalizado</span>
+            </div>           
           </div>
         </div>
         <div class="relative flex  flex-col gap-4 pb-4 pt-8 md:pt-0 md:col-span-4">
-         <p class="text-zinc-300 text-md md:text-lg">En mi rol como Frontend Developer, me responsabilicé de la creación y el mantenimiento de la interfaz de usuario de Series.ly. Entre mis principales responsabilidades se encontraban:</p>
+         <p class="text-zinc-300 text-md md:text-lg">
+            { workData[0].summary }
+        </p>
 
           <ul class="text-sm flex flex-col gap-4 text-zinc-300 [&>li>strong]:text-yellow-400/90 [&>li>strong]:font-semibold">
-            <li class="before:content-[''] before:inline-block before:absolute before:mt-[7px] before:-translate-x-4 before:w-[7px] before:h-[7px] before:rounded-[50%] before:bg-yellow-400/90"><strong>Maquetación</strong>: Implementación de la estructura y diseño visual del sitio web utilizando HTML y CSS (TailwindCSS).</li>
-            <li class="before:content-[''] before:inline-block before:absolute before:mt-[7px] before:-translate-x-4 before:w-[7px] before:h-[7px] before:rounded-[50%] before:bg-yellow-400/90"><strong>Desarrollo frontend</strong>: Implementación de la estructura y diseño visual del sitio web utilizando HTML y CSS (TailwindCSS).</li>
-            <li class="before:content-[''] before:inline-block before:absolute before:mt-[7px] before:-translate-x-4 before:w-[7px] before:h-[7px] before:rounded-[50%] before:bg-yellow-400/90"><strong>Optimización</strong>: Asegurar un rendimiento óptimo del sitio web en diferentes navegadores y dispositivos.</li>
-            <li class="before:content-[''] before:inline-block before:absolute before:mt-[7px] before:-translate-x-4 before:w-[7px] before:h-[7px] before:rounded-[50%] before:bg-yellow-400/90"><strong>Mantenimiento</strong>: Corrección de errores y actualización del código para garantizar el buen funcionamiento del sitio web.</li>
+            {
+              workData[0].responsabilities.map(responsability => (
+                <li class="before:content-[''] before:inline-block before:absolute before:mt-[7px] before:-translate-x-4 before:w-[7px] before:h-[7px] before:rounded-[50%] before:bg-yellow-400/90"><strong>{responsability.name}</strong>: {responsability.description}</li>
+              ))
+            }
           </ul>
         </div>
       </div>
