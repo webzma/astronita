@@ -9,7 +9,7 @@ export default {
     summary:
       "Desarrollador Frontend Junior con experiencia en el desarrollo de aplicaciones web utilizando ReatJS, Next.js y Astro.",
     location: {
-      postalCode: "",
+      postalCode: "3210",
       city: "San Felipe, Yaracuy",
       countryCode: "ES",
       region: "Venezuela",

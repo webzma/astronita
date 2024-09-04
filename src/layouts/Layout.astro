@@ -7,7 +7,7 @@ import { ViewTransitions } from "astro:transitions";
 import config from "../config/config.json";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -15,62 +15,62 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang={config.site.lang}>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={config.metadata.meta_description} />
-		<meta name="author" content={config.metadata.meta_author} />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="shortcut icon" href={config.site.favicon} />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, maximum-scale=5"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={config.metadata.meta_description} />
+    <meta name="author" content={config.metadata.meta_author} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="shortcut icon" href={config.site.favicon} />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
 
-		<title>{title}</title>
-		<ViewTransitions />
-	</head>
-	<body class="bg-neutral-950">
-		<div
-			class="absolute top-0 bottom-0 z-[-2] h-[1600px] w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_10%,rgba(60,66,213,35%),rgba(255,255,255,0))]"
-		>
-		</div>
-		<main class="max-w-[720px] m-auto px-4">
-			<Header />
-			<Hero />
-			<slot />
-			<Footer />
-		</main>
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body class="bg-neutral-950">
+    <div
+      class="absolute top-0 bottom-0 z-[-2] h-[800px] w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_10%,rgba(60,66,213,35%),rgba(255,255,255,0))]"
+    >
+    </div>
+    <main class="max-w-[770px] m-auto px-4">
+      <Header />
+      <Hero />
+      <slot />
+      <Footer />
+    </main>
 
-		<style is:global>
-			:root {
-				--accent: 136, 58, 234;
-				--accent-light: 224, 204, 250;
-				--accent-dark: 49, 10, 101;
-				--accent-gradient: linear-gradient(
-					45deg,
-					rgb(var(--accent)),
-					rgb(var(--accent-light)) 30%,
-					white 60%
-				);
+    <style is:global>
+      :root {
+        --accent: 136, 58, 234;
+        --accent-light: 224, 204, 250;
+        --accent-dark: 49, 10, 101;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          rgb(var(--accent-light)) 30%,
+          white 60%
+        );
 
-				color-scheme: light dark;
-			}
-			html {
-				scroll-behavior: smooth;
-				background-size: 224px;
-				font-family: "Onest Variable", system-ui;
-			}
+        color-scheme: light dark;
+      }
+      html {
+        scroll-behavior: smooth;
+        background-size: 224px;
+        font-family: "Onest Variable", system-ui;
+      }
 
-			h1,
-			h2,
-			h3,
-			h4 {
-				text-wrap: balance;
-			}
+      h1,
+      h2,
+      h3,
+      h4 {
+        text-wrap: balance;
+      }
 
-			p {
-				text-wrap: pretty;
-			}
-		</style>
-	</body>
+      p {
+        text-wrap: pretty;
+      }
+    </style>
+  </body>
 </html>

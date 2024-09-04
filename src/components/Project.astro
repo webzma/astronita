@@ -21,29 +21,40 @@ const {
 } = Astro.props;
 ---
 
-<article class="mb-14 rounded-2xl bg-transparent">
-  <h3 class="text-2xl text-yellow-400/90 font-semibold">{projectTitle}</h3>
-  <p class="text-zinc-300 mb-4 text-lg">{projectDescription}</p>
+<article
+  class="mb-14 rounded-2xl bg-transparent lg:flex lg:gap-x-4 lg:flex-row-reverse"
+>
+  <div class="lg:w-[800px]">
+    <h3 class="text-2xl text-yellow-400/90 font-semibold">{projectTitle}</h3>
+    <p class="text-zinc-300 mb-4 text-lg leading-6 mt-2">
+      {projectDescription}
+    </p>
 
-  <ul class="flex flex-row gap-2 mb-4 flex-wrap">
-    {
-      projectTecnologies.map((badge: { svg: any }) => (
-        <li>
-          <Fragment set:html={badge.svg} />
-        </li>
-      ))
-    }
-  </ul>
+    <ul class="flex flex-row gap-2 mb-4 flex-wrap mt-6">
+      {
+        projectTecnologies.map((badge: { svg: any }) => (
+          <li>
+            <Fragment set:html={badge.svg} />
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="hidden lg:flex gap-2 mt-2">
+      <GithubBtn url={projectGithubUrl} />
+      <DemoProjectBtn demo={projectWebUrl} />
+    </div>
+  </div>
 
   <img
     height="200"
     width="200"
     src={projectImageUrl}
     alt={projectTitle}
-    class="aspect-video xl:aspect-video mb-4 w-full rounded-2xl h-[380px] object-cover shadow-2xl shadow-gray-300/10"
+    class="aspect-video xl:aspect-video h-[220px] rounded-2xl w-full mb-4 lg:mb-0 lg:w-[320px] object-cover shadow-2xl shadow-gray-300/10"
   />
 
-  <div class="flex gap-2 mt-2">
+  <div class="lg:hidden flex gap-2 mt-2">
     <GithubBtn url={projectGithubUrl} />
     <DemoProjectBtn demo={projectWebUrl} />
   </div>
