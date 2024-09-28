@@ -4,7 +4,7 @@ import CerttificationsIcon from "./Icons/CertificationsIcon.astro";
 import data from "../config/data";
 import sortDate from "../utils/sortDate";
 
-const certificates = sortDate(data.certificates);
+const certificates = sortDate(data.certificates).slice(0, 6);
 ---
 
 <section class="mt-24" id="certifications">
@@ -52,4 +52,10 @@ const certificates = sortDate(data.certificates);
       </a>
     ))
   }
+
+  <a
+    href="/certifications"
+    class="underline hover:text-yellow-400 text-[3d4d4d8] font-semibold underline-offset-4"
+    >Ver todos los certificados
+  </a>
 </section>
