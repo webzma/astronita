@@ -1,20 +1,10 @@
 # Astro Starter Kit: Basics
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este proyecto es una plantilla básica de Astro, un framework moderno para construir sitios web rápidos y optimizados.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚀 Estructura del Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+Dentro de tu proyecto Astro, verás los siguientes archivos y carpetas:
 
 ```text
 /
@@ -30,26 +20,42 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- **`public/`**: Esta carpeta contiene activos estáticos como imágenes y fuentes. Los archivos aquí se sirven directamente en la raíz del sitio.
+- **`src/components/`**: Aquí es donde colocamos los componentes de Astro, React, Vue, Svelte o Preact.
+- **`src/layouts/`**: Esta carpeta contiene los diseños de página reutilizables.
+- **`src/pages/`**: Astro busca archivos `.astro` o `.md` en esta carpeta para exponerlos como rutas basadas en el nombre del archivo.
+- **`package.json`**: Este archivo contiene las dependencias y scripts del proyecto.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🧞 Comandos
 
-Any static assets, like images, can be placed in the `public/` directory.
+Todos los comandos se ejecutan desde la raíz del proyecto, desde una terminal:
 
-## 🧞 Commands
+| Comando                   | Acción                                                      |
+| :------------------------ | :---------------------------------------------------------- |
+| `npm install`             | Instala las dependencias                                    |
+| `npm run dev`             | Inicia el servidor de desarrollo en `localhost:4321`        |
+| `npm run build`           | Construye el sitio de producción en `./dist/`               |
+| `npm run preview`         | Previsualiza tu construcción localmente, antes de desplegar |
+| `npm run astro ...`       | Ejecuta comandos CLI como `astro add`, `astro check`        |
+| `npm run astro -- --help` | Obtén ayuda usando el CLI de Astro                          |
 
-All commands are run from the root of the project, from a terminal:
+## 📂 Descripción de Carpetas y Archivos
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### `src/components/`
 
-## 👀 Want to learn more?
+- **`Project.astro`**: Componente que muestra la información de un proyecto, incluyendo el título, descripción, imagen, enlaces a GitHub y demo, y tecnologías utilizadas.
+- **`ProjectsSection.astro`**: Sección que agrupa y muestra todos los proyectos utilizando el componente `Project.astro`.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### `src/config/`
+
+- **`data`**: Archivo de configuración que contiene los datos de los proyectos.
+
+### `src/pages/`
+
+- **`index.astro`**: Página principal del sitio.
+
+## 👀 ¿Quieres aprender más?
+
+Siéntete libre de consultar [nuestra documentación](https://docs.astro.build) o unirte a nuestro [servidor de Discord](https://astro.build/chat).
+
 # webzma.dev
