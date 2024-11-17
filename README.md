@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# Webzma Theme
 
 Este proyecto es una plantilla básica de Astro, un framework moderno para construir sitios web rápidos y optimizados.
 
@@ -48,7 +48,7 @@ Todos los comandos se ejecutan desde la raíz del proyecto, desde una terminal:
 
 ### `src/config/`
 
-- **`data`**: Archivo de configuración que contiene los datos de los proyectos.
+- **`data`**: Archivo de configuración que contiene los datos del proyectos.
 
 ### `src/pages/`
 
@@ -57,5 +57,7 @@ Todos los comandos se ejecutan desde la raíz del proyecto, desde una terminal:
 ## 👀 ¿Quieres aprender más?
 
 Siéntete libre de consultar [nuestra documentación](https://docs.astro.build) o unirte a nuestro [servidor de Discord](https://astro.build/chat).
+
+## Nota importante: Asegurate de remplazar la información
 
 # webzma.dev
